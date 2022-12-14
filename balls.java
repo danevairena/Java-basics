@@ -1,3 +1,22 @@
+/* In a box we have an indefinite number of balls of different colors that bring us different numbers of points. 
+Our task is to take out X balls - these balls will be entered from the console, bearing in mind that each different color affects 
+our points as follows:
+• If the ball is "red" our points increase by 5.
+• If the ball is "orange" our points increase by 10.
+• If the ball is "yellow" our points increase by 15.
+• If the ball is "white" our points increase by 20.
+• If the ball is "black" our points are divided by 2, rounding to the smaller whole number.
+If the ball is any color other than the above, the points are not manipulated and the program continues to run.
+
+The following lines are printed:
+"Total points: {all points collected}"
+"Red balls: {number of red balls}"
+"Orange balls: {number of orange balls}"
+"Yellow balls: {count yellow balls}"
+"White balls: {count white balls}"
+"Other colors picked: {the number of balls picked outside the set colors}"
+"Divides from black balls: {the number of times the points were divided by 2}" */
+
 import java.util.Arrays;
 import java.util.Objects;
 import java.util.Scanner;
