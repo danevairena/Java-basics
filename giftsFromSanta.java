@@ -18,16 +18,21 @@ public class giftsFromSanta
 {
     public static void main(String[] args)
     {
+        //new scanner object
         Scanner scan = new Scanner(System.in);
-
+        
+        //user input values
         int n = Integer.parseInt(scan.nextLine());
         int m = Integer.parseInt(scan.nextLine());
         int s = Integer.parseInt(scan.nextLine());
-
+        
+        //if S divides by 2 and 3 without remainder
         if (s % 2 == 0 && s % 3 == 0)
         {
+            //loop for numbers from M to S
             for (int i = m; i > s; i--)
             {
+                //if number divides by 2 and 3 without remainder - print on one line with space tabs in between
                 if (i % 2 == 0 && i % 3 == 0)
                 {
                     System.out.print(i);
@@ -37,8 +42,10 @@ public class giftsFromSanta
         }
         else
         {
+            //loop for numbers from M to N
             for (int i = m; i > n; i--)
             {
+                //if number divides by 2 and 3 without remainder - print on one line with space tabs in between
                 if (i % 2 == 0 && i % 3 == 0)
                 {
                     System.out.print(i);
